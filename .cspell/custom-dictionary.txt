@@ -1,0 +1,26 @@
+# Custom Dictionary Words
+Accion
+actualizar
+agregar
+asociado
+cliente
+editar
+Editar
+eliminar
+Eliminar
+encontralo
+informacio
+introducir
+Listar
+nque
+obtener
+paciente
+Paciente
+Pacientes
+pasado
+pasamos
+previmanete
+pueda
+saque
+solicitud
+valida
