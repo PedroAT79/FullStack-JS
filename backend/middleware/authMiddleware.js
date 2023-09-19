@@ -9,7 +9,7 @@ const checkAuth = async (req, res, next) =>{
     token = req.headers.authorization.split(' ')[1]; //aqui estoy asignando a la variable token la parte despues de "Bearer 23423422343"
    
     const decoded = jwt.verify(token, process.env.JWT_SECRET); //metodo de JWT para comprobar el token que recibe con el que tenemo en .env
-    console.log(decoded);
+    console.log('decode.id:' + decoded.id);
     
     req.Veterinario = await Veterinario.findById(decoded.id).select("-password -token -confirmado");//para que no se traiga los datos sensibles se le pone la parte de select()
     console.log("req vet: " +  Veterinario.id); //req.veterinario es para que cree una sesion con ese bojeto veterinario
